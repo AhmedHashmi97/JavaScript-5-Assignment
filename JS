@@ -1,0 +1,580 @@
+// =====================================================================
+// Changing case
+// 1. Write a program that takes user input. Convert and show the input 
+// in capital letters.
+// քʀօɢʀǟʍ:
+
+
+// function stringCase() {
+//     var user = prompt("Enter any Word");
+//     var cap = user.toUpperCase();
+
+//     return cap;
+// }
+// var b = stringCase();
+// document.write(b)
+// =============================================================================
+
+// =========================================================================
+// Changing case
+// 2. Write a program that takes user input. Convert and show the 
+// input in title case.
+
+
+
+// քʀօɢʀǟʍ:
+// function caseTitle() {
+//     var str = prompt("Ënter your word or String: ");
+//     var newStr = str.split(' ')
+//         .map(w => w[0].toUpperCase() + w.substring(1).toLowerCase())
+//         .join(' ');
+
+//     return newStr;
+// }
+
+// var title = caseTitle();
+// document.write(title);
+// ===========================================================================
+
+
+
+//         🆂🆃🆁🅸🅽🅶🆂: 🅼🅴🅰🆂🆄🆁🅸🅽🅶 🅻🅴🅽🅶🆃🅷 🅰🅽🅳 🅴🆇🆃🆁🅰🅲🆃🅸🅽🅶 🅿🅰🆁🆃🆂
+
+// Q. Write a program to take a user input about his favorite mobile 
+// phone model. Find and display the length of user input in your 
+// browser.
+// ===================================================================
+// քʀօɢʀǟʍ:
+// var a = prompt("Enter your favourite Mobile:")
+
+// if (a === "nokia" || a === "samsung" || a === "motorolla" || a === "iphone" || a === "realme" || a === "huawei" || a === "infinix" || a === "Oppo" || a === "vivi") {
+//     document.write("You've Entered: " + a + "<br>" + "Length of " + a + " is: " + a.length)
+// } else {
+//     document.write("You've entered wrong Name plz Reenter your mobile name  ")
+// }
+// ========================================================================
+
+// Q.Write a program to display the last character of a user input.
+// ===========================================================================
+// քʀօɢʀǟʍ:
+// var a = prompt("Enter your Name: ")
+// b = a.charAt(a.length - 1);
+
+// function lastChar() {
+
+//     document.write("You've entered " + a + "<br>" + "And its last letter/character is: " + b)
+
+// }
+// lastChar();
+// ===========================================================================
+
+
+//                           🆂🆃🆁🅸🅽🅶🆂: 🅵🅸🅽🅳🅸🅽🅶 🆂🅴🅶🅼🅴🅽🆃🆂
+// 1. Write a program to find the index of letter “n” in the word “Pakistani” 
+// and display the result in your browser.
+// ===========================================================================
+// քʀօɢʀǟʍ:
+// var nationality = "Pakistani";
+// var c = nationality.indexOf("n")
+// document.write("Ɠìѵҽղ աօɾժ : " + "Pakistani" + "<br>" + " Finding index of n : " + c)
+// ===========================================================================
+
+
+
+// ===========================================================================
+// 2. Write a program to take user input and store username in a 
+// variable. If the username contains any special symbol among (@ . , 
+// !), prompt the user to enter a valid username.
+
+// քʀօɢʀǟʍ:
+// var username = prompt("Welcome to the Smart Special Char Terminator!" + "\n" + "Enter Your Name: " + "\n" + "And check the results")
+// y = username.replace("@", "").replace("$", "").replace("!", "").replace(".", "").replace("#", "");
+// document.write("Username: " + y)
+// ===========================================================================
+
+
+// =============================================================================
+// 3. You have a string “The quick brown fox jumps over the lazy 
+// dog”. Write a program to count number of occurrences of word “the” 
+// in given string.
+// քʀօɢʀǟʍ:
+// var temp = "The quick brown fox jumps over the lazy dog.".toLowerCase();
+// var count = (temp.match(/the/g) || []).length;
+// document.write("Given String: " + temp + "<br>" + "Repeatition of the: " + count);
+// ==============================================================================
+
+
+// ==============================================================================
+// 🆂🆃🆁🅸🅽🅶🆂: 🅵🅸🅽🅳🅸🅽🅶 🅰 🅲🅷🅰🆁🅰🅲🆃🅴🆁 🅰🆃 🅰 🅻🅾🅲🅰🆃🅸🅾🅽
+//    1. Write a program to find the character at 3 rd index in the word 
+//     “Pakistani” and display the result in your browser
+// քʀօɢʀǟʍ:
+// var country = "Pakistani";
+// var srch = country.indexOf(3)
+// document.write("Third Index of a string is: " + srch)
+
+
+// ==============================================================================
+
+
+
+
+
+// ==============================================================================
+
+//                 🆂🆃🆁🅸🅽🅶🆂: 🆁🅴🅿🅻🅰🅲🅸🅽🅶 🅲🅷🅰🆁🅰🅲🆃🅴🆁🆂
+// 1. Write a program to replace the “Hyder” to “Islam” in the word 
+// “Hyderabad” and display the result in your browser.
+
+// քʀօɢʀǟʍ:
+// var c = "Hyderabad"
+// var a = c.replace("Hyder","Islam")
+// document.write("<br> City: "+c+ "<br> After replacement: "+ a)
+
+
+// 2. Write a program to replace all occurrences of “and” in the string 
+// with “&” and display the result in your browser var message = “Ali and Sami are best friends. They play cricket and 
+// football together.”
+
+// քʀօɢʀǟʍ:
+// var message = "Ali and Sami are best friends. They play cricket and football together."
+// var a=message.replace(/and/g,"&")
+// document.write("<br> Before: "+message+ "<br> After replacement: "+ a)
+// ==============================================================================
+
+// ==============================================================================
+//                     🆁🅾🆄🅽🅳🅸🅽🅶 🅽🆄🅼🅱🅴🆁🆂
+// 1. Write a program that takes a positive integer from user & display 
+// the following in your browser.
+// a. number (example number: 3.45214)
+// b. round off value of the number
+// c. floor value of the number
+// d. ceil value of the number
+
+// քʀօɢʀǟʍ:
+// var a = +prompt("Enter a Positive Integer: ")
+// if (a >= 0) {
+//     document.write("You've entered: " + a)
+//     var b = Math.round(a)
+//     var c = Math.floor(a)
+//     var d = Math.ceil(a)
+//     document.write("<br>" + "Rounding Off your value: " + b)
+//     document.write("<br>" + "Flooring your value: " + c)
+//     document.write("<br>" + "Ceiling your value: " + d)
+
+
+// } else {
+//     document.write("Please Enter Positive value")
+// }
+
+// 2. Write a program that takes a negative floating point number 
+// from user & display the following in your browser.
+// a. Number (example number: -2.678 )
+// b. round off value of the number
+// c. floor value of the number
+// d. ceil value of the number
+
+
+// քʀօɢʀǟʍ:
+// var a = +prompt("Enter a Positive Integer: ")
+// if (a <= 0) {
+//     document.write("You've entered: " + a)
+//     var b = Math.round(a)
+//     var c = Math.floor(a)
+//     var d = Math.ceil(a)
+//     document.write("<br>" + "Rounding Off your value: " + b)
+//     document.write("<br>" + "Flooring your value: " + c)
+//     document.write("<br>" + "Ceiling your value: " + d)
+
+
+// } else {
+//     document.write("Please Enter Negative value")
+// }
+
+
+
+// ==============================================================================
+
+
+// ==============================================================================
+
+// 🅶🅴🅽🅴🆁🅰🆃🅸🅽🅶 🆁🅰🅽🅳🅾🅼 🅽🆄🅼🅱🅴🆁🆂
+// 1. Write a program that simulates a dice using random() method of JS 
+// Math class. Display the value of dice in your browser.
+
+// քʀօɢʀǟʍ:
+// document.write("Random dice value: "+Math.floor(  (Math.random()*6) +1) )
+// document.write("<br>Random dice value: "+Math.floor(  (Math.random()*6) +1) )
+
+// 2. Write a program that simulates a coin toss using random() method 
+// of JS Math class. Display the value of coin in your browser.
+// 2 = Heads and 1 = Tails
+// քʀօɢʀǟʍ:
+// var toss=(Math.random()*2) +1
+// var toss=Math.floor(toss)
+// if (toss==1){
+// document.write(toss+ "<br>Random coin value: Heads" )
+// }
+// else{
+// document.write(toss+ "<br>Random coin value: Tails" )
+// }
+
+
+// 3. Write a program that stores a random secret number from 1 to 10 in a 
+// variable. Ask the user to input a number between 1 and 10. If the user input 
+// equals the secret number, congratulate the user.
+// քʀօɢʀǟʍ:
+// document.write("Random number between 1 and 100: "+Math.floor( (Math.random()*100) +1 )  )
+// ==============================================================================
+
+// ======================================================================================
+// 🅲🅾🅽🆅🅴🆁🆃🅸🅽🅶 🆂🆃🆁🅸🅽🅶🆂 🆃🅾 🅸🅽🆃🅴🅶🅴🆁🆂 🅰🅽🅳 🅳🅴🅲🅸🅼🅰🅻🆂
+// 1. Write a program that asks the user about his weight. Parse the user 
+// input and display his weight in your browser.
+// Possible user inputs can be:
+// a. 50
+// b. 50kgs
+// c. 50.2kg
+// քʀօɢʀǟʍ:
+// var weight=prompt("Enter Your Weight In Kilograms")
+// weight=weight.replace("kgs","")
+// weight=weight.replace("kg","")
+// weight=weight.replace("kilograms","")
+// weight=weight.replace("kilogram","")
+// document.write("The weight of users is "+ weight+" kilograms")
+// =============================================================================================
+
+// ===============================================================================
+// 🅲🅾🅽🆅🅴🆁🆃🅸🅽🅶 🆂🆃🆁🅸🅽🅶🆂 🆃🅾 🅽🆄🅼🅱🅴🆁🆂, 🅽🆄🅼🅱🅴🆁🆂 🆃🅾 🆂🆃🆁🅸🅽🅶🆂
+// 1. Write a program that converts a string “472” to a number 472. 
+// Display the values & types in your browser.
+// Hint: (use typeof())
+// քʀօɢʀǟʍ:
+// function reverseString(str) {
+
+//     var splitString = str.split("");
+
+//     var reverseArray = splitString.reverse();
+
+//     var joinArray = reverseArray.join("");
+//     return joinArray;
+// }
+
+// reverseString("472");
+
+// 2. Write a program that converts the variable num to string.
+// var num = 35.36 ;
+// Remove the dot to display “3536” display in your browser.
+// քʀօɢʀǟʍ:
+
+// ==================================================================================
+
+
+// =================================================================================
+// 🅲🅾🅽🆃🆁🅾🅻🅻🅸🅽🅶 🆃🅷🅴 🅻🅴🅽🅶🆃🅷 🅾🅵 🅳🅴🅲🅸🅼🅰🅻🆂
+// 1. Write a program to control the length of decimals to 2.
+// var percentage = 30 / 45 * 100; -> 66.6666666666666
+// քʀօɢʀǟʍ:
+
+// =================================================================================
+
+// ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ CHAPTER NO: 31-34 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬//
+
+// Task  : 1.
+// document.write(Date())
+
+
+// Task  : 2.
+// var months=["January" , "February" , "March" , "April", "May","June", "July", "August", "September", "October","November", "December"]
+// var month=new Date()
+// month=month.getMonth()
+// month_word=months[month]
+// alert("Current month is: "+month_word)
+
+
+// Task  : 3.
+// var day=Date()
+// var day=day.slice(0,3)
+// alert("Today is "+day)
+
+
+// Task  : 4.
+// var day=new Date()
+// day= day.getDay()
+// if(day==0 || day==6)
+// {
+// document.write("It's Fun Day ")    
+// }
+// else{
+// document.write("Today is Not Sat or Sun")    
+// }
+
+
+// Task  : 5.
+// var date= new  Date()
+// date=date.getDate()
+// if(date < 16){
+// document.write("First fifteen days of the month "+date)
+// }
+// else{
+// document.write("Last days of the month "+date)
+// }
+
+
+// Task  : 6.
+// var date=new Date()
+// document.write("Current Datte: "+date)
+// document.write("<br>Elapsed milliseconds since January 1, 1970 :  "+date.getTime())
+// document.write("<br>Elapsed minutes since January 1,1970 :  "+date.getTime() / (1000*60))
+
+
+// Task  : 7.
+// var date=new Date()
+// hour=date.getHours()
+// if(hour>0  &&  hour<=12){
+// document.write("Its AM ")
+// }
+// else{
+// document.write("Its PM ")
+// }
+
+
+// Task  : 8.
+// var date=new Date("Dec 31, 2020")
+// document.write("Later date: "+ date)
+
+
+// Task  : 9.
+// var start=new Date("June 18, 2015")
+// start=start.getTime()
+// var end=new Date()
+// end=end.getTime()
+// var diff=end-start
+// document.write( Math.floor( diff/(1000*60*60*24) ) +" days have passed since 1st Ramadan, 2015")
+
+
+// Task  : 10.
+// var start=new Date("Jan 1, 2015")
+// start=start.getTime()
+// var end=new Date("Dec 5, 2015")
+// end_ref_date=end.getTime()
+// var diff=end_ref_date-start
+// document.write("On reference date "+ end +", "+ Math.floor( diff/1000 ) +" seconds had passed since beginning of 2015")
+
+
+// Task  :11.
+// var date=new Date()
+// document.write("Current date: "+ date)
+// var get_hour=date.getHours()
+// date.setHours(get_hour-10)
+// document.write("<br>One hour ago, it was: " +date)
+
+
+// Task  : 12.
+// var date=new Date()
+// document.write("Current date: "+ date)
+// var year=date.getFullYear()
+// date.setFullYear(year-100)
+// document.write("<br>100 years back, it was: " +date)
+
+
+
+// Task  : 13.
+// var age=prompt("Enter Your Age")
+// document.write("Your age is: "+ age)
+// var date=new Date()
+// var year=date.getFullYear()
+// document.write("<br>Your birth year is: " +(year-age))
+
+
+// Task  : 14.
+// document.write(" <h1> K-Electric Bill </h1>  ")
+// document.write("Customer Name: <b> ABC Customer </b>")
+// document.write("<br> Month: <b> February </b>")
+// var units = 410
+// var charges = 16
+// var surcharges = 350
+// document.write(`<br>  Number of units: <b>  ${units} </b> `)
+// document.write(`<br>  Charges per unit: <b>  ${charges} </b> `)
+// document.write(`<br><br>  Net Amount Payable (within Due Date): <b>  ${(charges * units).toFixed(2)} </b> `)
+// document.write(`<br> Late Payment Surcharge: <b>  ${surcharges} </b> `)
+// document.write(`<br> Gross Amount Payable (after Due Date): <b>  ${((charges * units) + surcharges).toFixed(2)} </b>`)
+
+
+
+
+
+
+
+// ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ CHAPTER NO: 35-38 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬//
+
+// Task  : 1.
+// function dateTime(){
+// document.write(Date())
+// }
+// dateTime()
+
+
+// Task  : 2.
+// function greets(){
+// var first_name=prompt("Enter Your First Name")
+// var last_name=prompt("Enter Your Last Name")
+// alert("Hello! "+first_name+" "+last_name)
+// }
+// greets()
+
+
+// Task  : 3.
+// function add(){
+// var num1=Number(prompt("Enter First Number"))
+// var num2=Number(prompt("Enter Second Number"))
+// alert(num1+num2)
+// }
+// add()
+
+
+// Task  : 4. 
+// function calculator(num1,num2,operator) {
+//     if (operator == "+") {
+//         alert(num1 + num2)
+//     }
+//     else if (operator == "-") {
+//         alert(num1 - num2)
+//     }
+//     else if (operator == "*") {
+//         alert(num1 * num2)
+//     }
+//     else if (operator == "/") {
+//         alert(num1 / num2)
+//     }
+// }
+// calculator(4,2,"+")
+
+
+// Task  : 5.
+// function square(arg){
+//     document.write("Square of "+arg+" is "+arg**2)
+// }
+// square(5)
+
+
+// Task  : 6.
+// function factorial(num) {
+//     var flag = 1
+//     for (var i = 1; i <= num; i++) {
+//         flag = flag * i
+//     }
+//     return flag
+// }
+// num = 5
+// document.write("Factorial of " + num + " is " + factorial(num))
+
+
+// Task  : 7.
+// function counting(start, end) {
+//     for (var i = start; i <= end; i++) {
+//         document.write(i + "<br>")
+//     }
+// }
+// counting(1, 100)
+
+
+// Task  : 8.
+// function calculateHypotenuse(base, per) {
+//   var hypotenuse= calculateSquare(base) + calculateSquare(per) 
+//    hypotenuse=Math.sqrt(hypotenuse)
+//    return hypotenuse.toFixed(2)
+
+//    function calculateSquare(number) {
+//     return number**2 }
+// }
+// var base = Number(prompt("Enter Base Value Of Triangle: "))
+// var per  = Number(prompt("Enter Perpendicular Value Of Triangle: "))
+// document.write("Base value: " + base)
+// document.write("<br> Perpendicular value: " + per)
+// document.write("<br> Hypotenuse is: "+ calculateHypotenuse(base, per))
+
+
+// Task  : 9.
+// function area(width, height){
+//    var Area=width*height
+//     document.write("Width: "+ width)
+//     document.write("<br> Height: "+ height)
+//     document.write("<br> Area: "+Area)
+// }
+// var height=10
+// area(10,height)
+
+
+// Task  : 10.
+// function palindrome(p) {
+//     for (var a=0; a < p.length; a+=1) {
+//         if (p[a] !==p[p.length - 1 - a]) {
+//             document.write("No")
+//             break }
+//         else {
+//             document.write("Yes")
+//             break }
+//     }
+// }
+// palindrome("madam")
+
+
+// Task  :11.
+// function titlecase(arg) {
+//     var words = arg.split(" ")
+//     var title = ""
+//     for (var key of words) {
+//         var start = key[0].toUpperCase()
+//         var end = key.slice(1)
+//         title = title + start + end + " "
+//     }
+//     document.write("EXAMPLE STRING: " +arg)
+//     document.write("<br>EXPECTED OUTPUT : "+title)
+// }
+// titlecase("the quick brown fox")
+
+
+// Task  : 12.
+// function longestword(arg) {
+//     var words = arg.split(" ")
+//     var word = words[0]
+//     for (var key of words) {
+//         if (key.length > word.length) {
+//             word = key }
+//     }
+//     document.write("EXAMPLE STRING: " +arg)
+//     document.write("<br>EXPECTED OUTPUT: " + word)
+// }
+// longestword("Web Development Course")
+
+
+// Task  : 13.
+// function stringoccurance(arg1, arg2) {
+//     var flag = 0
+//     arg1 = arg1.toLowerCase()
+//     arg2 = arg2.toLowerCase()
+//     var occure = arg1.split("")
+//     for (var key of occure) {
+//         if (arg2 === key) {
+//             flag++  }
+//     }
+//     document.write("EXAMPLE STRING: " + arg1)
+//     document.write("<br>OUTPUT: " + arg2 + " occurrences: "+ flag +" time")
+// }
+// stringoccurance("JSResourceS.com", "o")
+
+
+// Task  : 14.
+// document.write("<h1>The Geometrizer</h1>")
+// function calcCircumference(radius) {
+//     var circumference =Math.PI * radius * 2
+//     document.write("Circumference of circle is: "+ circumference.toFixed(2) )
+// }
+// function calcArea(radius) {
+//     var area =Math.PI * (radius**2)
+//     document.write("<br> Area of circle is: "+ area.toFixed(2) )
+// }
+// var radius = Number(prompt("Enter The Radius of Circle"))
+// calcCircumference(radius)
+// calcArea(radius)
